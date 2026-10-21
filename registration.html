@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>LGU Student Society - Join Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Lahore Garrison University Student Society</h1>
+        <nav class="navigation">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="information.html" class="nav-link">Events & Membership</a>
+            <a href="registration.html" class="nav-link active">Join Us</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Membership Registration Form</h2>
+        <p>Fill out the form below to become a member of the LGU Student Society.</p>
+
+        
+        <form id="registration-form" action="#" method="POST">
+            
+           
+            <fieldset>
+                <legend>Account Details</legend>
+                
+                <div class="form-group">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">University Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password (Min 8 characters):</label>
+                    <input type="password" id="password" name="password" minlength="8" required>
+                </div>
+            </fieldset>
+
+            
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" min="16" max="30">
+                </div>
+
+                <div class="form-group">
+                    <label for="pref-date">Preferred Orientation Date:</label>
+                    <input type="date" id="pref-date" name="pref_date">
+                </div>
+
+                <div class="form-group">
+                    <label for="department">Department / Major:</label>
+                    <select id="department" name="department" required>
+                        <option value="" disabled selected>Select your department...</option>
+                        <option value="cs">Computer Science</option>
+                        <option value="se">Software Engineering</option>
+                        <option value="it">Information Technology</option>
+                        <option value="design">UI/UX Design</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            
+            <fieldset>
+                <legend>Preferences & Interests</legend>
+
+                <div class="form-group">
+                    <label>Current Status:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="undergrad" name="student_status" value="undergraduate" required>
+                        <label for="undergrad" class="inline-label">Undergraduate</label>
+                        
+                        <input type="radio" id="postgrad" name="student_status" value="postgraduate">
+                        <label for="postgrad" class="inline-label">Postgraduate</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Areas of Interest (Select at least one):</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="webdev" name="interests" value="web_development">
+                        <label for="webdev" class="inline-label">Web Development</label><br>
+                        
+                        <input type="checkbox" id="design" name="interests" value="graphic_design">
+                        <label for="design" class="inline-label">Graphic Design</label><br>
+                        
+                        <input type="checkbox" id="ai" name="interests" value="artificial_intelligence">
+                        <label for="ai" class="inline-label">Artificial Intelligence</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="comments">Why do you want to join? (Max 200 characters):</label>
+                    <textarea id="comments" name="comments" rows="4" maxlength="200" placeholder="Tell us a little about yourself..."></textarea>
+                </div>
+            </fieldset>
+
+            
+            <div class="button-group">
+                <button type="submit" class="btn btn-submit">Submit Registration</button>
+                <button type="reset" class="btn btn-reset">Reset Form</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Lahore Garrison University Student Society. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

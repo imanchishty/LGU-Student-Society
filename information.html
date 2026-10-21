@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LGU Student Society - Events & Membership</title>
+    <style>
+        /* Element selector */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fdfbfb;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Element selector */
+        header {
+            background: linear-gradient(135deg, #ffffff 0%, #fff0f5 100%);
+            border-bottom: 2px solid #f2d6dc;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Class selector */
+        .nav-link {
+            color: #555;
+            text-decoration: none;
+            padding: 8px 16px;
+            margin: 0 5px;
+            border-radius: 20px;
+        }
+
+        /* Class selector with pseudo-class for interactivity */
+        .nav-link.active {
+            color: #b76e79;
+            font-weight: bold;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        /* Class selector */
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        /* Element selectors for the article and aside */
+        article {
+            flex: 2;
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid #f2d6dc;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+        }
+
+        aside {
+            flex: 1;
+            background: #fff0f5;
+            border: 1px solid #f2d6dc;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+        }
+
+        /* Element selectors for headings */
+        h1, h2, h3 {
+            color: #4a3e3d;
+        }
+
+        h2 {
+            color: #b76e79;
+            border-bottom: 2px solid #f2d6dc;
+            padding-bottom: 8px;
+            margin-top: 0;
+        }
+
+        /* ID selector */
+        #membership-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #ffffff;
+        }
+
+        /* Element selectors for table formatting */
+        #membership-table th, #membership-table td {
+            border: 1px solid #e0e0e0;
+            padding: 12px;
+            text-align: left;
+        }
+
+        #membership-table th {
+            background-color: #f2d6dc;
+            color: #4a3e3d;
+        }
+
+        /* Attribute selector */
+        [controls] {
+            width: 100%;
+            margin-top: 10px;
+            border-radius: 8px;
+        }
+        footer {
+    background-color: #ffffff;
+    border-top: 1px solid #f2d6dc;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 40px;
+}
+
+        /* Class selector */
+        .media-section {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid #f2d6dc;
+            border-radius: 12px;
+            padding: 25px;
+            margin-top: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Lahore Garrison University Student Society</h1>
+        <nav style="margin-top: 15px;">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="information.html" class="nav-link active">Events & Membership</a>
+            <a href="registration.html" class="nav-link">Join Us</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        
+       
+        <article>
+            <h2>Upcoming Event: Spring Tech & Design Expo</h2>
+            <p>Join us this April at the main LGU campus for our flagship Spring Tech & Design Expo. This event brings together computer science and design students to showcase their semester projects, ranging from web applications to glassmorphic UI prototypes.</p>
+            <p>Attendees will have the opportunity to network with alumni, attend mini-workshops on modern web technologies, and participate in a live UI/UX design challenge. Don't miss this chance to expand your portfolio and meet fellow creators!</p>
+        </article>
+
+       
+        <aside>
+            <h3>Announcement</h3>
+            <p><strong>Call for Volunteers!</strong></p>
+            <p>We are looking for dedicated members to help organize the Spring Expo. Volunteers get early access to workshops and exclusive society merchandise. Reach out to the executive committee if interested.</p>
+        </aside>
+
+        
+        <section class="media-section">
+            <h2>Society Media</h2>
+            <div>
+                <h3>LGU Society Podcast</h3>
+                <p>Listen to our latest interview with the LGU alumni network.</p>
+                
+                <audio controls>
+                    <source src="media/event-audio.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element. Please download the file to listen.
+                </audio>
+            </div>
+            
+            <div style="margin-top: 20px;">
+                <h3>Tech Expo Highlights</h3>
+                <p>Watch the highlights from last semester's hackathon.</p>
+                
+                <video controls width="100%">
+                    <source src="media/society-event.mp4" type="video/mp4">
+                    Your browser does not support the video tag. Please download the video to watch it.
+                </video>
+            </div>
+        </section>
+
+        <!-- Table, headers, 3 columns, and 4 data rows -->
+        <section class="media-section">
+            <h2>Membership Plans</h2>
+            <table id="membership-table">
+                <caption>Comparison of LGU Society Membership Tiers for 2026</caption>
+                <thead>
+                    <tr>
+                        <th>Membership Tier</th>
+                        <th>Semester Fee (PKR)</th>
+                        <th>Key Benefits</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Basic Member</td>
+                        <td>500</td>
+                        <td>Access to general meetings and monthly newsletters.</td>
+                    </tr>
+                    <tr>
+                        <td>Silver Member</td>
+                        <td>1000</td>
+                        <td>Basic benefits + free entry to two workshops.</td>
+                    </tr>
+                    <tr>
+                        <td>Gold Member</td>
+                        <td>1500</td>
+                        <td>Silver benefits + VIP seating at guest lectures.</td>
+                    </tr>
+                    <tr>
+                        <td>Executive Member</td>
+                        <td>2500</td>
+                        <td>All benefits + voting rights and organizing committee eligibility.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+<footer>
+        <p>&copy; 2026 Lahore Garrison University Student Society. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
